@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes, createBrowserRouter } from "react-router-
 import { Home } from "./Home"
 import { About } from "./About"
 import { Error } from "./Error"
-import { Principal } from "./principal"
+import { Principal } from "./Principal"
 import { Proyects } from "./Projects"
 /* export const Layout=()=>{
     return(
