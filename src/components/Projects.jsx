@@ -1,9 +1,9 @@
-export const Proyects=()=>{
+export const Projects=()=>{
     return (
         <>
-        <div>
-            Proyects
-        </div>
+            <div>
+                Proyects
+            </div>
         </>
     )
 }

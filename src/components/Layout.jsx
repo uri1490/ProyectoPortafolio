@@ -3,7 +3,7 @@ import { Home } from "./Home"
 import { About } from "./About"
 import { Error } from "./Error"
 import { Principal } from "./Principal"
-import { Proyects } from "./Projects"
+import { Projects } from "./Projects"
 /* export const Layout=()=>{
     return(
         <>
@@ -27,7 +27,7 @@ export const Layout = createBrowserRouter([
         element:<About/>,        
     },
     {
-        path:"Proyects",
-        element:<Proyects/>,       
+        path:"Projects",
+        element:<Projects/>,       
     },
 ])
