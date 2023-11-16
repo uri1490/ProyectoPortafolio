@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 
 export  const Principal = ()=>{
     return <>
@@ -19,6 +19,6 @@ export  const Principal = ()=>{
             </div>
             
         </nav>
-    
+        <Outlet></Outlet>
     </>
 }
