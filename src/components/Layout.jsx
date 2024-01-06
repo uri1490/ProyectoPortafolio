@@ -20,14 +20,18 @@ export const Layout = createBrowserRouter([
     {
         path:"/",
         element:<Principal/>,
-        errorElement:<Error></Error>
+        errorElement:<Error></Error>,
+        children: [
+            {
+                path:"About",
+                element:<About/>,        
+            },
+            {
+                path:"Projects",
+                element:<Projects/>,       
+            },
+        ]
     },    
-    {
-        path:"About",
-        element:<About/>,        
-    },
-    {
-        path:"Projects",
-        element:<Projects/>,       
-    },
+   
+   
 ])
