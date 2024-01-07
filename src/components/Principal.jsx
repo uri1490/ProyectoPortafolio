@@ -1,26 +1,13 @@
 import { Link, Outlet } from "react-router-dom";
-
+import { Encabezado } from "./Encabezado";
+import { Body } from "./Body";
+import { Footer } from "./Footer";
 export const Principal = () => {
   return (
     <>
-      <nav className="navbar navbar-dark bg-dark">
-        <div className="container">
-          <ul>
-            test
-            {/* <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/About">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/Projects">Projects</Link>
-                </li>        
-            */}
-          </ul>
-        </div>
-      </nav>
-      <Outlet></Outlet>
+      <Encabezado></Encabezado>
+      <Body></Body>
+      <Footer></Footer>
     </>
   );
 };
