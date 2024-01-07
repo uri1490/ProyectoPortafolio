@@ -5,9 +5,11 @@ import { Footer } from "./Footer";
 export const Principal = () => {
   return (
     <>
-      <Encabezado></Encabezado>
-      <Body></Body>
-      <Footer></Footer>
+      <div className="w-10/12">
+        <Encabezado></Encabezado>
+        <Body></Body>
+        <Footer></Footer>
+      </div>
     </>
   );
 };
