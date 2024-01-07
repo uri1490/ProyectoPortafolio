@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Body = () => {
-  return <div>Body</div>;
+  return <div className="bg-green-300">Body</div>;
 };
