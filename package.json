@@ -2,6 +2,7 @@
   "name": "proyectoportafolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://uri1490.github.io/ProyectoPortafolio/build",
   "type": "module",
   "scripts": {
     "dev": "vite",
