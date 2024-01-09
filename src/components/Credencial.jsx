@@ -16,8 +16,8 @@ export const Credencial = () => {
           </span>
           <div></div>
           <div className="flex flex-row justify-center space-x-6">
-            <img src="/code.png" alt="" className="w-10 h-10" />
-            <img src="/linkedin.png" alt="" className="w-10 h-10" />
+            <img src="/code.png" alt="code" className="w-10 h-10" />
+            <img src="/linkedin.png" alt="link" className="w-10 h-10" />
           </div>
         </div>
         <div
