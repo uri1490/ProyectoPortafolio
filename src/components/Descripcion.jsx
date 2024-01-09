@@ -13,7 +13,7 @@ export const Descripcion = () => {
           target="_blank"
         >
           <button className="flex items-center py-1 px-4 bg-blue-500 border border-blue-700 rounded space-x-3">
-            <img src="/CV1.ico" alt="" />
+            <img src="./CV1.ico" alt="" />
             <span>CV</span>
           </button>
         </a>
