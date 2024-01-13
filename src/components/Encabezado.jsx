@@ -2,6 +2,7 @@ import React from "react";
 
 import { useState } from "react";
 import { ImMenu3 } from "react-icons/im";
+import { IoClose } from "react-icons/io5";
 export const Encabezado = () => {
   const [openNav, setOpenNav] = useState(false);
   const handleClick = () => setOpenNav(!openNav);
@@ -13,7 +14,11 @@ export const Encabezado = () => {
         <div className="z-50">logo</div>
         <div className="z-40 md:hidden">
           <button onClick={handleClick}>
-            <ImMenu3 className="w-7 h-7"></ImMenu3>
+            {openNav ? (
+              <IoClose className="w-7 h-7"></IoClose>
+            ) : (
+              <ImMenu3 className="w-7 h-7"></ImMenu3>
+            )}
           </button>
         </div>
         <div
