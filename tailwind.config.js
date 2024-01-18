@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        ubuntu: ["Rubik Doodle Shadow", "normal"],
+      },
+      backgroundImage: {
+        "hero-pattern": "url('./t1.jpg')",
+      },
+    },
   },
   plugins: [],
 };
