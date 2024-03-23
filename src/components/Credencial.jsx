@@ -1,36 +1,67 @@
 import React from "react";
-import { FaUserAstronaut } from "react-icons/fa6";
+import { FaUserAstronaut, FaGithub } from "react-icons/fa6";
+import { FaFileDownload } from "react-icons/fa";
+import { TiSocialLinkedinCircular } from "react-icons/ti";
+
+import { SiLinkedin } from "react-icons/si";
+import { ListaIconos } from "./ListaIconos";
 export const Credencial = () => {
+  // divide-x-1 border-r-4 border-r-green-500 border-b-4
   return (
     <>
       <div
         id="tarjeta"
-        className="bg-hero-pattern flex flex-col-reverse w-3/4 h-4/5  md:w-1/2 rounded-2xl md:flex-row md:h-[50%] overflow-hidden"
+        className="relative h-full w-full flex justify-center items-center flex-col gap-3"
       >
-        <div
-          id="descripcion"
-          className="flex flex-col   justify-between md:justify-around h-4/6 md:h-full md:w-9/12"
-        >
-          <div>
-            <span className="flex justify-center">Hola, Soy</span>
-            <span className="flex justify-center text-[3rem] text-cyan-500">
-              Uriel RV
-            </span>
-            <span className="flex justify-center">Soy Desarrollador Web</span>
+        <div className="absolute max-[767px]:space-x-1 sm:space-x-2 md:space-x-6 flex h-full w-full  items-end justify-center">
+          <ListaIconos></ListaIconos>
+        </div>
+        <div className="z-20 flex max-[767px]:items-center  max-[767px]:flex-col-reverse max-[767px]:h-[80%] h-1/2 max-[767px]:w-full w-9/12 ">
+          <div className="w-[70%]  max-[767px]:h-[60%] flex flex-col gap-6 max-[767px]:justify-start justify-end max-[767px]:items-center">
+            <h1 className="text-4xl font-mono max-[767px]:text-center">
+              <b className="">Hola,</b>
+            </h1>
+            <p className="flex font-mono items-end gap-4 text-4xl max-[767px]:text-center">
+              <b>soy</b>
+              <span className="">
+                <b className="text-5xl text-yellow-300 neon">Uriel</b>,
+              </span>
+            </p>
+            <p className="text-3xl font-mono max-[767px]:text-center">
+              <b>desarrollador web</b>
+              <span className="animateGradient">
+                <b> Front-End</b>
+              </span>
+            </p>
+            <div className="flex w-9/12  gap-10 max-[767px]:justify-center items-center ">
+              <FaGithub className="w-6 h-10 cursor-pointer trasition linear duration-500 hover:fill-teal-300"></FaGithub>
+
+              <TiSocialLinkedinCircular className="h-9 w-9 cursor-pointer trasition linear duration-500 hover:fill-teal-300"></TiSocialLinkedinCircular>
+            </div>
           </div>
 
-          <div className="flex flex-row justify-center space-x-6 p-1">
-            <img src="./code.png" alt="code" className="w-10 h-10" />
-            <img src="./linkedin.png" alt="link" className="w-10 h-10" />
+          <div className=" max-[767px]:h-[40%]  h-full relative  max-[767px]:w-[70%] w-[30%] flex justify-center  items-end overflow-hidden ">
+            <div className="absolute foto z-10 bg-cyan-300 max-[767px]:h-1/2 h-[60%] w-full rounded-md"></div>
+            <img
+              src="./perfil1.png"
+              alt=""
+              className="user object-contain max-[767px]:h-[90%] h-full w-full z-20"
+            />
           </div>
         </div>
-        <div
-          id="foto"
-          className=" flex justify-center  items-center w-full h-1/3 md:w-1/4 md:h-full"
-        >
-          <div className=" w-32 h-32 rounded-2xl border-solid border-2 border-indigo-600 overflow-hidden">
-            <FaUserAstronaut className="w-full h-full" />
-          </div>
+        <div className="z-10  flex max-[767px]:h-[20%] w-9/12 max-[767px]:justify-center justify-start items-center ">
+          <a
+            href="./certificado.pdf"
+            // download={"../..public/certificado.pdf"}
+            target="_blank"
+          >
+            <button className=" flex max-[767px]:h-16 max-[767px]:w-48 items-center py-1 px-4 h-12  bg-[#212121] border border-[#14FFEC] rounded-lg space-x-3 shadow-md transition duration-500 ease-linear hover:shadow-blue-600 ">
+              <FaFileDownload className="fill-[#14FFEC] h-12 animate-bounce" />
+              <span className="text-white max-[767px]:text-xl">
+                Descargar CV
+              </span>
+            </button>
+          </a>
         </div>
       </div>
     </>

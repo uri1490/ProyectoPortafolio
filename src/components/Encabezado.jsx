@@ -1,8 +1,10 @@
 import React from "react";
-
+import "./general.css";
 import { useState } from "react";
 import { ImMenu3 } from "react-icons/im";
 import { IoClose } from "react-icons/io5";
+import "../index.css";
+import { FaHome, FaUserAstronaut, FaTools } from "react-icons/fa";
 export const Encabezado = () => {
   const [openNav, setOpenNav] = useState(false);
   const handleClick = () => setOpenNav(!openNav);
@@ -10,9 +12,11 @@ export const Encabezado = () => {
   console.log(openNav);
   return (
     <>
-      <nav className="navbar flex bg-dark w-full justify-between bg-stone-700 text-yellow-50 h-[5vh] md:h-[5vh] sticky top-0">
-        <div className="z-50 flex items-center font-ubuntu">
-          <h1 className="text-blue-500 text-lg">&#8826;uRi&#8827;&#129299;</h1>
+      <nav className=" flex    w-full justify-between  text-yellow-50 h-[5vh] md:h-[5vh] sticky z-50 top-0">
+        <div className="z-50 flex items-center">
+          <h1 className=" text-lg font-light">
+            <b>Portafolio &#129299;</b>
+          </h1>
         </div>
         <div className="z-40 md:hidden">
           <button onClick={handleClick}>
@@ -24,24 +28,37 @@ export const Encabezado = () => {
           </button>
         </div>
         <div
-          className={`absolute  md:static md:flex  ${
-            openNav ? "flex" : "hidden"
-          } justify-center w-full md:w-1/2 h-[100vh] md:h-full items-center z-10`}
+          className={`absolute  md:static flex ${
+            openNav ? "left-0" : "-left-[2000px]"
+          } justify-center duration-300  w-full md:w-1/2 h-[100vh]  backdrop-blur-sm  md:h-full items-center z-10`}
         >
-          <ul className="flex w-full justify-center space-y-10 md:space-y-0 flex-col md:flex-row md:justify-between">
-            <li className="flex justify-center">
+          <ul className="flex items-center   w-full justify-center space-y-10 md:space-y-0 flex-col md:flex-row md:justify-between">
+            <li className="flex justify-center items-center gap-1">
+              <FaHome className="max-[767px]:h-10 max-[767px]:w-10" />
               <a
                 href="#home"
-                className="transition ease-in-out delay-150 duration-300 hover:bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-[length:100%_6px] bg-no-repeat"
+                className="font-mono bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size]"
               >
-                Home
+                <span className="max-[767px]:text-4xl  text-lg">Home</span>
               </a>
             </li>
-            <li className="flex justify-center">
-              <a href="#about">About</a>
+            <li className="flex justify-center items-center gap-1">
+              <FaUserAstronaut className="max-[767px]:h-10 max-[767px]:w-10" />
+              <a
+                href="#about"
+                className="font-mono bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size]"
+              >
+                <span className="max-[767px]:text-4xl text-lg">About</span>
+              </a>
             </li>
-            <li className="flex justify-center">
-              <a href="#projects">Proyectos</a>
+            <li className="flex justify-center  items-center gap-1">
+              <FaTools className="max-[767px]:h-10 max-[767px]:w-10" />
+              <a
+                href="#projects"
+                className="font-mono relative bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size]"
+              >
+                <span className="max-[767px]:text-4xl text-lg">Proyectos</span>
+              </a>
             </li>
           </ul>
         </div>

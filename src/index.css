@@ -1,3 +1,443 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  /* neon */
+  .neon {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  }
+  /* animacion gradiante */
+  .animateGradient {
+    background: rgb(189, 189, 189);
+    background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(255, 143, 38, 1) 0%,
+      rgba(150, 126, 197, 1) 48%,
+      rgba(0, 255, 222, 1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    animation: gradient 5s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* sombra imagen */
+  .user {
+    filter: drop-Shadow(4px 6px 12px black);
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .padre:hover {
+    cursor: pointer;
+  }
+  .padre:hover > .test {
+    color: #00ffff;
+  }
+  .cont:hover {
+    cursor: progress;
+  }
+  .cont:hover > .mrf {
+    transform: rotateY(-180deg);
+  }
+  .mrf {
+    transform-style: preserve-3d;
+    transition: transform 1500ms;
+  }
+  .front {
+    backface-visibility: hidden;
+  }
+  .back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  .clip-your-needful-style {
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+    z-index: 1;
+  }
+
+  .escrituracss {
+    animation: escritura 2.5s steps(15),
+      transparente 0.5s step-end infinite alternate;
+    animation-delay: 0.5s;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    border-right: 3px solid;
+  }
+
+  @keyframes escritura {
+    from {
+      width: 0px;
+    }
+  }
+
+  @keyframes transparente {
+    50% {
+      border-color: transparent;
+    }
+  }
+  .glitch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000000;
+  }
+  /* font-size: 10px; font-weight: bold;letter-spacing: 3px;*/
+  .glitch {
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+  }
+
+  .glitch:before,
+  .glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+  .glitch:before {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00ffff;
+    z-index: -1;
+  }
+
+  .glitch:after {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+      infinite;
+    color: #ff00ff;
+    z-index: -2;
+  }
+
+  @keyframes glitch-it {
+    from {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    to {
+      transform: translate(2px, -2px);
+    }
+  }
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+  .ope {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+  }
+  .pro::after {
+    @apply content-[''] bg-yellow-200 left-1/2 -bottom-[5px] h-[3px] w-[0%] rounded-xl absolute duration-500;
+  }
+  .pro:hover::after {
+    @apply w-[100%] left-0;
+  }
+  .glass {
+    visibility: hidden;
+    transition: 0.5s all;
+  }
+  .cardGlass:hover > .glass {
+    visibility: visible;
+    left: 0;
+  }
+
+  .tit,
+  .lol {
+    transition: transform 0.5s;
+  }
+  .tit2 {
+    transition: transform 0.5s;
+  }
+  .show:hover .tit {
+    transform: translate3d(0%, -50px, 100px);
+  }
+  .show:hover .tit2 {
+    transform: translate3d(0%, -50px, 100px);
+  }
+  .estrella {
+    transition: transform 0.5s;
+  }
+  .show:hover > .estrella {
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    transform: perspective(500px) translateY(5%) rotateX(70deg) translateZ(0);
+  }
+  .most {
+    opacity: 0;
+    transition: all 1s;
+    z-index: 1;
+  }
+  .show:hover > .most {
+    opacity: 1;
+    transition: translate3d(0%, -30%, 100px);
+  }
+
+  .div2 {
+    width: 0%;
+    height: 0%;
+
+    transition: all 0.5s;
+  }
+  .contMRF:hover > .div2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+  }
+  .descripcionMRF,
+  .tituloMRF {
+    opacity: 0;
+  }
+  .contMRF:hover .descripcionMRF,
+  .tituloMRF {
+    transition-delay: 0.5s;
+    opacity: 1;
+  }
+  .contApi:hover .descripcionApi {
+    clip-path: polygon(51% 0, 0% 100%, 100% 100%);
+  }
+  /* ecriptador */
+  .contenedorEncrip {
+    cursor: pointer;
+  }
+  .ovni {
+    top: 230px;
+    transition: all 1.5s;
+  }
+  .descripcionEncrip {
+    top: 280px;
+    transition: all 1.5s;
+  }
+  .contenedorEncrip:hover > .ovni {
+    top: -30px;
+  }
+  .contenedorEncrip:hover > .descripcionEncrip {
+    top: 0px;
+  }
+  /* SIPAE */
+  .fondoSipae {
+    left: 0;
+    transition: all 0.5s;
+  }
+  .descripcionSipae {
+    transition: all 0.5s;
+    right: 100%;
+  }
+  .contenedorSipae:hover .fondoSipae {
+    left: 100%;
+  }
+  .contenedorSipae:hover .descripcionSipae {
+    right: 0%;
+  }
+  /* descripcion */
+  .logros1 {
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .logros2 {
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .logros3 {
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .contDiploma,
+  .contChalleng,
+  .contPremio:hover {
+    cursor: pointer;
+  }
+
+  .contDiploma:hover ~ .logros1 {
+    z-index: 50;
+    opacity: 1;
+  }
+  .contChalleng:hover ~ .logros2 {
+    z-index: 50;
+    opacity: 1;
+  }
+  .contPremio:hover ~ .logros3 {
+    z-index: 50;
+    opacity: 1;
+  }
+  :root {
+    --cono: 0deg;
+  }
+  .test3 {
+    z-index: 1;
+    background-image: conic-gradient(
+      from 0deg at 50% 50%,
+      /* #000000,
+      #002a06,
+      #00530d,
+      #007d13,
+      #00a619,
+      #00d01f,
+      #00f926,
+      #24ff45 */
+        #212121,
+      #14ffec
+    );
+
+    animation: conic 5s linear infinite;
+  }
+
+  @keyframes conic {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* fondo animado */
+  .iconos {
+    /* clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  ); */
+    animation: slide 15s cubic-bezier(0, 0.26, 0.51, 0.57) infinite;
+    animation-duration: calc(125s / var(--i));
+    /* filter: drop-shadow(5px 5px 15px #3203a0); */
+    filter: drop-shadow(0px 0px 11px rgba(20, 52, 233, 0.952));
+  }
+  @keyframes slide {
+    0% {
+      rotate: 0deg;
+      translate: 0;
+      opacity: 1;
+    }
+    100% {
+      rotate: 360deg;
+      translate: 0 -90vh;
+      opacity: 0;
+    }
+  }
+  /* fondo gradiante */
+  .fondoGradiante {
+    background-image: linear-gradient(
+      90deg,
+      rgba(245, 0, 255, 1) 0%,
+      rgba(0, 188, 212, 1) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
+
+    background-size: 300% 100%;
+    animation: gradient 5s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .bordeGradiante {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 188, 212, 1) 50%,
+      rgba(33, 76, 72, 1) 100%
+    );
+    background-repeat: repeat;
+    animation: grad 5s linear infinite;
+  }
+  @keyframes grad {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* texto que se dezplaza */
+  .texto-desplegar {
+    animation: texto 4s infinite;
+  }
+  @keyframes texto {
+    50% {
+      translate: -200%;
+    }
+  }
+  .texto-desplegar2 {
+    animation: texto 4s infinite;
+  }
+  @keyframes texto {
+    50% {
+      translate: -100%;
+    }
+  }
+}
