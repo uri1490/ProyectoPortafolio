@@ -7,9 +7,9 @@ import { GiDiploma, GiTeacher, GiSkills } from "react-icons/gi";
 export const MonitorDescripcion = () => {
   return (
     <>
-      <div className="hidden md:flex flex-col h-full ">
+      <div className="hidden md:flex flex-col h-full border border-solid border-red-600 ">
         <div className="w-full h-full  flex">
-          <div className="md:w-[20%] lg:w-[25%] 2xl:w-[35%]  flex flex-col justify-center items-center">
+          <div className="flex flex-col md:w-[20%] lg:w-[25%] 2xl:w-[30%] justify-center items-center border border-solid border-red-600  ">
             <img
               src="./f2.jpg"
               alt=""
@@ -100,7 +100,7 @@ export const MonitorDescripcion = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:w-[80%] lg:w-[75%] 2xl:w-[65%] gap-2 ">
+          <div className="flex flex-col md:w-[80%] lg:w-[75%] 2xl:w-[70%] border border-solid border-red-600  gap-2 ">
             <div className="min-[1500px]:h-[40%] h-[30%] text-white">
               <h1 className=" md:text-[20px] lg:text-3xl  text-yellow-500 font-mono">
                 <b>Acerca de mi</b>
@@ -122,8 +122,11 @@ export const MonitorDescripcion = () => {
                 Java, C#, C++, Git, Tortoise SVN, Jira.
               </p>
             </div>
-            <div className=" relative min-[1500px]:h-[60%] h-[70%]  grid grid-cols-9 grid-rows-8">
-              <div className="contDiploma relative flex items-center justify-center  col-span-3 row-span-5 p-1   m-2 rounded-lg overflow-hidden">
+            <div className=" relative min-[1500px]:h-[60%] h-[70%]  grid grid-cols-9 grid-rows-8 gap-1">
+              <div className="text-center col-span-9 row-span-1 col-start-1 row-start-1 md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
+                Logros
+              </div>
+              <div className="contDiploma relative flex items-center justify-center  col-span-3 row-span-4 p-1    rounded-lg overflow-hidden">
                 <div className="test3 h-[150%] w-[30rem] rounded-full absolute"></div>
                 <div className=" bg-black w-full h-full z-10  flex flex-col items-center p-2 gap-2  rounded-lg">
                   <GiTeacher className="h-7 w-7  rounded-md fill-[#14FFEC]" />
@@ -140,7 +143,7 @@ export const MonitorDescripcion = () => {
                   className=" rounded-lg h-full w-full shadow-2xl shadow-black"
                 />
               </div>
-              <div className="contChalleng relative flex items-center justify-center  z-10 col-span-3 row-span-5 p-1  m-2 rounded-lg overflow-hidden">
+              <div className="contChalleng relative flex items-center justify-center  z-10 col-span-3 row-span-4 p-1   rounded-lg overflow-hidden">
                 <div className="test3 h-[150%] w-[30rem] rounded-full absolute"></div>
                 <div className="bg-black z-10 w-full h-full flex flex-col items-center p-2 gap-2  rounded-lg">
                   <GiDiploma className="fill-[#14FFEC] h-7 w-7" />
@@ -164,7 +167,7 @@ export const MonitorDescripcion = () => {
                   className="w-1/2 h-full shadow-2xl shadow-black rounded-lg"
                 />
               </div>
-              <div className="contPremio relative flex items-center justify-center col-span-3 row-span-5 p-1  m-2 rounded-lg overflow-hidden">
+              <div className="contPremio relative flex items-center justify-center col-span-3 row-span-4 p-1   rounded-lg overflow-hidden">
                 <div className="test3 h-[150%] w-[30rem] rounded-full absolute"></div>
                 <div className="bg-black  z-10 rounded-lg flex flex-col items-center  p-2 gap-2 w-full h-full">
                   {/* <img
@@ -186,7 +189,7 @@ export const MonitorDescripcion = () => {
                   className="rounded-lg h-full w-full shadow-2xl shadow-black object-fill  "
                 />
               </div>
-              <div className="  col-span-9 row-span-3 m-2">
+              <div className="  col-span-9 row-span-3 ">
                 <div className="w-full h-[30%] flex items-center justify-center">
                   <h1 className="md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
                     Tech stack

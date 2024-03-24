@@ -5,7 +5,7 @@ import { Footer } from "./Footer";
 export const Principal = () => {
   return (
     <>
-      <div className="w-full lg:w-10/12 max-w-5xl ">
+      <div className="w-full lg:w-10/12 max-w-7xl ">
         <Body></Body>
         <Footer></Footer>
       </div>

@@ -38,7 +38,7 @@
   }
   /* sombra imagen */
   .foto {
-    mask-image: url("./fondoFoto.png");
+    mask-image: url("../fondoFoto.png");
     -webkit-mask-position: center;
     mask-position: center bottom;
     -webkit-mask-size: 100%;
