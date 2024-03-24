@@ -16,8 +16,8 @@ export const Credencial = () => {
         <div className="absolute max-[767px]:space-x-1 sm:space-x-2 md:space-x-6 flex h-full w-full  items-end justify-center">
           <ListaIconos></ListaIconos>
         </div>
-        <div className="z-20 flex max-[767px]:items-center  max-[767px]:flex-col-reverse max-[767px]:h-[80%] h-1/2 max-[767px]:w-full w-9/12 ">
-          <div className="w-[70%]  max-[767px]:h-[60%] flex flex-col gap-6 max-[767px]:justify-start justify-end max-[767px]:items-center">
+        <div className="z-20 flex max-[767px]:items-center  max-[767px]:flex-col-reverse max-[767px]:h-[80%] h-1/2 max-[767px]:w-full w-full ">
+          <div className="w-[50%]  max-[767px]:h-[60%] flex flex-col gap-6 max-[767px]:justify-start justify-end items-center max-[767px]:items-center">
             <h1 className="text-4xl font-mono max-[767px]:text-center">
               <b className="">Hola,</b>
             </h1>
@@ -40,12 +40,12 @@ export const Credencial = () => {
             </div>
           </div>
 
-          <div className=" max-[767px]:h-[40%]  h-full relative  max-[767px]:w-[70%] w-[30%] flex justify-center  items-end overflow-hidden ">
-            <div className="absolute foto z-10 bg-cyan-300 max-[767px]:h-1/2 h-[60%] w-full rounded-md"></div>
+          <div className=" max-[767px]:h-[40%]   h-full relative  max-[767px]:w-[70%] w-[50%] flex justify-center  items-end overflow-hidden ">
+            <div className="absolute foto  z-10 bg-cyan-300  h-full w-full rounded-md"></div>
             <img
               src="./perfil1.png"
               alt=""
-              className="user object-contain max-[767px]:h-[90%] h-full w-full z-20"
+              className="user object-contain max-[767px]:h-[90%] h-4/5 w-4/5 z-20 mb-5"
             />
           </div>
         </div>

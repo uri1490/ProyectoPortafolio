@@ -35,6 +35,7 @@ export default {
         "ari-enc": "url('../ari2.gif')",
         "sige8-enc": "url('../sige9.JPEG')",
         "fondoOvni-enc": "url('../fondoOvni.jpg')",
+        "fondoFoto2-enc": "url('../fondoFoto3.png')",
       },
     },
   },
