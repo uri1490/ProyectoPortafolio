@@ -16,32 +16,32 @@ export const Credencial = () => {
         <div className="absolute max-[767px]:space-x-1 sm:space-x-2 md:space-x-6 flex h-full w-full  items-end justify-center">
           <ListaIconos></ListaIconos>
         </div>
-        <div className="z-20 flex  max-[767px]:items-center  max-[767px]:flex-col-reverse max-[767px]:h-[80%] h-1/2 max-[767px]:w-full w-full ">
+        <div className="z-20 flex  max-[767px]:items-center  max-[767px]:flex-col-reverse max-[767px]:h-[80%] h-[65%] max-[767px]:w-full w-full ">
           <div className="w-[50%]   max-[767px]:h-[60%] flex flex-col gap-6 max-[767px]:justify-start justify-end items-center max-[767px]:items-center">
-            <h1 className=" text-4xl  w-[70%] font-mono max-[767px]:text-center">
+            <h1 className="text-[#212121] text-5xl  w-[70%] font-mono max-[767px]:text-center">
               <b className="">Hola,</b>
             </h1>
-            <p className="flex text-left w-[70%] font-mono items-end gap-4 text-4xl max-[767px]:text-center">
+            <p className="text-[#212121] flex text-left w-[70%] font-mono items-end gap-4 text-5xl max-[767px]:text-center">
               <b>soy</b>
               <span className="">
                 <b className="text-5xl text-yellow-300 neon">Uriel</b>,
               </span>
             </p>
-            <p className="text-3xl font-mono text-left w-[70%] max-[767px]:text-center">
+            <p className="text-[#212121] text-4xl font-mono text-left w-[70%] max-[767px]:text-center">
               <b>desarrollador web</b>
               <span className="animateGradient">
                 <b> Front-End</b>
               </span>
             </p>
-            <div className="flex w-9/12  gap-10 max-[767px]:justify-center items-center ">
+            <div className="flex w-[70%]  gap-10 max-[767px]:justify-center items-center ">
               <FaGithub className="w-6 h-10 cursor-pointer trasition linear duration-500 hover:fill-teal-300"></FaGithub>
 
               <TiSocialLinkedinCircular className="h-9 w-9 cursor-pointer trasition linear duration-500 hover:fill-teal-300"></TiSocialLinkedinCircular>
             </div>
           </div>
 
-          <div className=" max-[767px]:h-[40%] border border-solid border-red-600  h-full relative  max-[767px]:w-[70%] w-[50%] flex justify-center  items-end overflow-hidden ">
-            <div className="absolute foto  z-10 bg-cyan-300  h-full w-full rounded-md"></div>
+          <div className=" max-[767px]:h-[40%]  h-full relative  max-[767px]:w-[70%] w-[50%] flex justify-center  items-end overflow-hidden ">
+            <div className="absolute foto  z-10 bg-cyan-300  h-full w-[90%] rounded-md"></div>
             <img
               src="./perfil1.png"
               alt=""
@@ -55,9 +55,9 @@ export const Credencial = () => {
             // download={"../..public/certificado.pdf"}
             target="_blank"
           >
-            <button className=" flex max-[767px]:h-16 max-[767px]:w-48 items-center py-1 px-4 h-12  bg-[#212121] border border-[#14FFEC] rounded-lg space-x-3 shadow-md transition duration-500 ease-linear hover:shadow-blue-600 ">
+            <button className=" flex max-[767px]:h-16 max-[767px]:w-48 items-center py-1 px-4 h-12  bg-[#212121] border border-[#14FFEC] rounded-lg space-x-3 shadow-md transition duration-500 ease-linear hover:text-[#14FFEC] hover:shadow-[0px_1px_7px_5px_#14FFEC] ">
               <FaFileDownload className="fill-[#14FFEC] h-12 animate-bounce" />
-              <span className="text-white max-[767px]:text-xl">
+              <span className="text-white max-[767px]:text-xl ">
                 Descargar CV
               </span>
             </button>

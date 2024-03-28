@@ -3,7 +3,8 @@ import { FaTrophy, FaGraduationCap } from "react-icons/fa6";
 import { FaTools } from "react-icons/fa";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { GiDiploma, GiTeacher, GiSkills } from "react-icons/gi";
-
+import { ListaIconosCarrusel } from "./ListaIconosCarrusel";
+import { TextoDescripcion } from "./TextoDescripcion";
 export const MonitorDescripcion = () => {
   return (
     <>
@@ -105,22 +106,7 @@ export const MonitorDescripcion = () => {
               <h1 className=" md:text-[20px] lg:text-3xl  text-yellow-500 font-mono">
                 <b>Acerca de mi</b>
               </h1>
-              <p className="md:text-[13px] lg:text-xs xl:text-xs 2xl:text-base font-mono">
-                Cuento con un titulo como Ingeniero en sistemas Computacionales,
-                como introducción al mundo laboral comencé realizando practicas
-                profesionales dentro de mi universidad creando un repositorio
-                para el control de documentación. Trabaje como desarrollador
-                front-end en una consultoría, al principio fue para realizar mi
-                estadía profesional y después me reclutaron para trabajar de
-                tiempo completo. Posteriormente trabaje en una compañía dedicada
-                a la distribución de equipo radiológico en la cual desempeñe
-                diversas labores tales como programar, documentar, revisar
-                equipos de rayos x, testear software, impartir cursos de los
-                equipos de rayos x, etc. Dentro de los lenguajes y tecnologías
-                con los cuales tuve la oportunidad de trabajar son: angular,
-                typscript, javascript, bootstrap, HTML, CSS, SQL, MySQL, PHP,
-                Java, C#, C++, Git, Tortoise SVN, Jira.
-              </p>
+              <TextoDescripcion></TextoDescripcion>
             </div>
             <div className=" relative min-[1500px]:h-[60%] h-[70%]  grid grid-cols-9 grid-rows-8 gap-1">
               <div className="text-center col-span-9 row-span-1 col-start-1 row-start-1 md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
@@ -196,42 +182,8 @@ export const MonitorDescripcion = () => {
                   </h1>
                 </div>
                 <div className="flex h-[70%] w-full  gap-96 space-x-56 overflow-hidden ">
-                  <div className="flex justify-start items-center  w-full gap-2 animate-infinite-scroll">
-                    <img src="./git.ico" alt="git" className="h-8" />
-                    <img src="./lab.ico" alt="gitlab" className="h-8" />
-                    <img src="./tor.ico" alt="tortoise" className="h-8" />
-                    <img src="./sharp.ico" alt="csharp" className="h-8" />
-                    <img src="./java.ico" alt="java" className="h-8" />
-                    <img src="./mysql.ico" alt="mysql" className="h-8" />
-                    <img src="./js.ico" alt="js" className="h-8" />
-                    <img src="./css.ico" alt="css" className="h-8" />
-                    <img src="./ts.svg" alt="typescript" className="h-8" />
-                    <img src="./ang.svg" alt="angular" className="h-8" />
-                    <img src="./sql.svg" alt="sql" className="h-8" />
-                    <img src="./tw.svg" alt="tailwind" className="h-8" />
-                    <img src="./rea.svg" alt="react" className="h-8" />
-                    <img src="./spri.svg" alt="spring" className="h-8" />
-                    <img src="./html.ico" alt="oscar" className="h-8" />
-                    <img src="./boot.ico" alt="oscar" className="h-8" />
-                  </div>
-                  <div className="flex justify-start items-center  w-full gap-2 animate-infinite-scroll">
-                    <img src="./git.ico" alt="git" className="h-8" />
-                    <img src="./lab.ico" alt="gitlab" className="h-8" />
-                    <img src="./tor.ico" alt="tortoise" className="h-8" />
-                    <img src="./sharp.ico" alt="csharp" className="h-8" />
-                    <img src="./java.ico" alt="java" className="h-8" />
-                    <img src="./mysql.ico" alt="mysql" className="h-8" />
-                    <img src="./js.ico" alt="js" className="h-8" />
-                    <img src="./css.ico" alt="css" className="h-8" />
-                    <img src="./ts.svg" alt="typescript" className="h-8" />
-                    <img src="./ang.svg" alt="angular" className="h-8" />
-                    <img src="./sql.svg" alt="sql" className="h-8" />
-                    <img src="./tw.svg" alt="tailwind" className="h-8" />
-                    <img src="./rea.svg" alt="react" className="h-8" />
-                    <img src="./spri.svg" alt="spring" className="h-8" />
-                    <img src="./html.ico" alt="oscar" className="h-8" />
-                    <img src="./boot.ico" alt="oscar" className="h-8" />
-                  </div>
+                  <ListaIconosCarrusel />
+                  <ListaIconosCarrusel />
                 </div>
               </div>
             </div>
