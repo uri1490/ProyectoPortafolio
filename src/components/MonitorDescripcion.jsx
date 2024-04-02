@@ -11,20 +11,20 @@ export const MonitorDescripcion = () => {
     <>
       <div className="hidden md:flex flex-col h-full  ">
         <div className="w-full h-full  flex gap-2">
-          <div className="flex flex-col  items-center md:w-[20%] lg:w-[25%] 2xl:w-[30%]   p-1 gap-6 bg-slate-950 rounded-md">
-            <div className=" flex justify-center ">
+          <div className="flex flex-col  items-center md:w-[20%] lg:w-[25%] 2xl:w-[30%]   p-1 gap-2 bg-slate-950 rounded-md">
+            <div className=" flex justify-center h-[30%] ">
               <img
                 src="./f2.jpg"
                 alt=""
-                className=" object-cover rounded-full h-[75%] w-[85%]"
+                className=" object-cover rounded-full h-full w-[85%]"
               />
             </div>
-            <div className="flex h-[60%] text-xs  text-white">
+            <div className="flex h-[70%] text-xs  text-white">
               <div className=" w-full">
                 <div className="flex items-center">
                   <FaGraduationCap className="h-5 w-5 fill-[#14FFEC]" />
                   <h1 className="font-light text-xl 2xl:text-3xl text-[#14FFEC]">
-                    <b>Estudios</b>
+                    <b>FORMACIÓN ACADÉMICA</b>
                   </h1>
                 </div>
 
@@ -44,18 +44,18 @@ export const MonitorDescripcion = () => {
                   <div className="flex items-center">
                     <FaTools className="h-6 w-5 fill-[#14FFEC]" />
                     <h1 className="font-light text-xl 2xl:text-3xl text-[#14FFEC]">
-                      <b>Empresas</b>
+                      <b>EXPERIENCIA LABORAL</b>
                     </h1>
                   </div>
 
                   <ul className="ml-2">
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <h1 className="2xl:text-lg">SINTELTI</h1>
+                      <h1 className="2xl:text-lg">SINTELTI | 1 Año</h1>
                     </li>
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <h1 className="2xl:text-lg">CMR</h1>
+                      <h1 className="2xl:text-lg">CMR | 5 años</h1>
                     </li>
                   </ul>
                 </div>
@@ -66,7 +66,7 @@ export const MonitorDescripcion = () => {
                     className="h-6 w-6 fill-[#14FFEC]"
                   />
                   <h1 className="font-light text-xl 2xl:text-3xl text-[#14FFEC]">
-                    <b>Aptitudes</b>
+                    <b>APTITUDES</b>
                   </h1>
                 </div>
 
@@ -108,7 +108,7 @@ export const MonitorDescripcion = () => {
               <TextoDescripcion></TextoDescripcion>
             </div>
             <div className=" relative min-[1500px]:h-[60%] h-[70%]  grid grid-cols-9 grid-rows-8 gap-1">
-              <div className="text-center col-span-9 row-span-1 col-start-1 row-start-1 md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
+              <div className="text-center col-span-9 row-span-1 col-start-1 row-start-2 md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
                 Logros
               </div>
               <div className="contDiploma relative flex items-center justify-center  col-span-3 row-span-3 p-1    rounded-lg overflow-hidden">
@@ -174,7 +174,7 @@ export const MonitorDescripcion = () => {
                   className="rounded-lg h-full w-full shadow-2xl shadow-black object-fill  "
                 />
               </div>
-              <div className="  col-span-9 row-span-3 row-start-6 bg-slate-950 rounded-md">
+              <div className="  col-span-9 row-span-2 row-start-7 bg-slate-950 rounded-md">
                 <div className="w-full h-[30%] flex items-center justify-center">
                   <h1 className="md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
                     Tech stack

@@ -49,15 +49,15 @@ export const Credencial = () => {
             />
           </div>
         </div>
-        <div className="z-10  flex max-[767px]:h-[20%] w-9/12 max-[767px]:justify-center justify-start items-center ">
+        <div className="z-10  flex max-[767px]:h-[20%] md:w-full w-full max-[767px]:justify-start  items-center ">
           <a
             href="./certificado.pdf"
             // download={"../..public/certificado.pdf"}
             target="_blank"
           >
-            <button className=" flex max-[767px]:h-16 max-[767px]:w-48 items-center py-1 px-4 h-12  bg-[#212121] border border-[#14FFEC] rounded-lg space-x-3 shadow-md transition duration-500 ease-linear hover:text-[#14FFEC] hover:shadow-[0px_1px_7px_5px_#14FFEC] ">
+            <button className=" flex max-[767px]:h-16 max-[767px]:w-48 items-center ml-20 py-1 px-4 h-12  bg-[#212121] hover:border border-[#14FFEC] rounded-lg space-x-3 shadow-md transition duration-300 ease-linear hover:text-[#14FFEC]  hover:shadow-[0px_1px_7px_5px_#14FFEC] ">
               <FaFileDownload className="fill-[#14FFEC] h-12 animate-bounce" />
-              <span className="text-white max-[767px]:text-xl ">
+              <span className="text-white max-[767px]:text-xl  ">
                 Descargar CV
               </span>
             </button>

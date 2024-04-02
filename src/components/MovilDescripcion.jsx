@@ -11,13 +11,13 @@ export const MovilDescripcion = () => {
           alt=""
           className=" h-[20%] md:w-[50%] lg:w-[60%] 2xl:w-[70%] "
         />
-        <div className=" text-white h-[45%]">
+        <div className=" text-white ">
           <h1 className=" md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
             Acerca de mi
           </h1>
           <TextoDescripcion></TextoDescripcion>
         </div>
-        <div className="flex flex-col items-center h-[35%] w-full  text-xs gap-6 text-white">
+        <div className="flex flex-col items-center h-80 w-full  text-xs gap-6 text-white">
           <CaracteristicasMovilDescripcion />
           <ImagenesLogros />
         </div>
