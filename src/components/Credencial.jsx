@@ -17,7 +17,7 @@ export const Credencial = () => {
           <ListaIconos></ListaIconos>
         </div>
         <div className="z-20 flex  max-[767px]:items-center  max-[767px]:flex-col-reverse max-[767px]:h-[80%] h-[65%] max-[767px]:w-full w-full ">
-          <div className="w-[50%]   max-[767px]:h-[60%] flex flex-col gap-6 max-[767px]:justify-start justify-end items-center max-[767px]:items-center">
+          <div className="md:w-[50%] w-full   max-[767px]:h-[60%] flex flex-col gap-6 max-[767px]:justify-start justify-end items-center max-[767px]:items-center">
             <h1 className="text-[#212121] text-5xl  w-[70%] font-mono max-[767px]:text-center">
               <b className="">Hola,</b>
             </h1>

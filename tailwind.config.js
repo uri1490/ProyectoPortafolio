@@ -36,6 +36,7 @@ export default {
         "sige8-enc": "url('../sige9.JPEG')",
         "fondoOvni-enc": "url('../fondoOvni.jpg')",
         "fondoFoto2-enc": "url('../fondoFoto3.png')",
+        "fondoCard-enc": "url('../fondoCard2.jpg')",
       },
     },
   },
