@@ -3,7 +3,7 @@ import React from "react";
 export function TextoDescripcion() {
   return (
     <>
-      <p className=" font-light max-sm:text-sm max-md:text-lg max-xl:text-xl max-2xl:text-2xl">
+      <p className=" font-light sm:text-xs md:text-sm xl:text-lg 2xl:text-xl">
         Cuento con un titulo como Ingeniero en sistemas Computacionales, como
         introducción al mundo laboral comencé realizando practicas profesionales
         dentro de mi universidad creando un repositorio para el control de

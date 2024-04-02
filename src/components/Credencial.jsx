@@ -16,18 +16,21 @@ export const Credencial = () => {
         <div className="absolute max-[767px]:space-x-1 sm:space-x-2 md:space-x-6 flex h-full w-full  items-end justify-center">
           <ListaIconos></ListaIconos>
         </div>
-        <div className="z-20 flex  max-[767px]:items-center  max-[767px]:flex-col-reverse max-[767px]:h-[80%] h-[65%] max-[767px]:w-full w-full ">
+        <div className="z-20 flex md:items-center  max-[767px]:flex-col-reverse max-[767px]:h-[80%] h-[65%] max-[767px]:w-full w-full ">
           <div className="md:w-[50%] w-full   max-[767px]:h-[60%] flex flex-col gap-6 max-[767px]:justify-start justify-end items-center max-[767px]:items-center">
-            <h1 className="text-[#212121] text-5xl  w-[70%] font-mono max-[767px]:text-center">
+            <h1 className="text-[#212121] 2xl:text-7xl text-5xl w-[70%] font-mono max-[767px]:text-center">
               <b className="">Hola,</b>
             </h1>
-            <p className="text-[#212121] flex text-left w-[70%] font-mono items-end gap-4 text-5xl max-[767px]:text-center">
+            <p className="text-[#212121] flex text-left w-[70%] font-mono items-end gap-4 text-5xl 2xl:text-7xl max-[767px]:text-center">
               <b>soy</b>
               <span className="">
-                <b className="text-5xl text-yellow-300 neon">Uriel</b>,
+                <b className="2xl:text-7xl text-5xl text-yellow-300 neon">
+                  Uriel
+                </b>
+                ,
               </span>
             </p>
-            <p className="text-[#212121] text-4xl font-mono text-left w-[70%] max-[767px]:text-center">
+            <p className="text-[#212121] 2xl:text-6xl text-4xl font-mono text-left w-[70%] max-[767px]:text-center">
               <b>desarrollador web</b>
               <span className="animateGradient">
                 <b> Front-End</b>
@@ -40,7 +43,7 @@ export const Credencial = () => {
             </div>
           </div>
 
-          <div className=" max-[767px]:h-[40%]  h-full relative  max-[767px]:w-[70%] w-[50%] flex justify-center  items-end overflow-hidden ">
+          <div className=" md:h-[70%]  h-full relative  md:w-[50%] w-[50%] flex justify-center  items-center overflow-hidden ">
             <div className="absolute foto  z-10 bg-cyan-300  h-full w-[90%] rounded-md"></div>
             <img
               src="./perfil1.png"
