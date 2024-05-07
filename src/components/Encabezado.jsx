@@ -3,19 +3,31 @@ import "./general.css";
 import { useState } from "react";
 import { ImMenu3 } from "react-icons/im";
 import { IoClose } from "react-icons/io5";
+import { BsTranslate } from "react-icons/bs";
+
+import { useTranslation } from "react-i18next";
 import "../index.css";
 import { FaHome, FaUserAstronaut, FaTools } from "react-icons/fa";
 export const Encabezado = () => {
+  const { t } = useTranslation();
+  const { i18n } = useTranslation();
+  const cambiarIdioma = (leng) => {
+    console.log(leng);
+    i18n.changeLanguage(leng);
+  };
+  const [isOn, setIsOn] = useState(false);
+  const handleIdioma = () => setIsOn(!isOn);
   const [openNav, setOpenNav] = useState(false);
   const handleClick = () => setOpenNav(!openNav);
   const closeMobileMenu = () => setOpenNav(false);
   console.log(openNav);
+
   return (
     <>
       <nav className=" flex    w-full justify-between  text-yellow-50 h-[5vh] md:h-[5vh] sticky z-50 top-0">
         <div className="z-50 flex items-center">
           <h1 className=" text-lg font-light">
-            <b>Portafolio &#129299;</b>
+            <b>{t("Portafolio")} &#129299;</b>
           </h1>
         </div>
         <div className="z-40 md:hidden">
@@ -39,7 +51,9 @@ export const Encabezado = () => {
                 href="#home"
                 className="font-mono bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size]"
               >
-                <span className="max-[767px]:text-4xl  text-lg">Home</span>
+                <span className="max-[767px]:text-4xl  text-lg">
+                  {t("Home")}
+                </span>
               </a>
             </li>
             <li className="flex justify-center items-center gap-1">
@@ -48,7 +62,9 @@ export const Encabezado = () => {
                 href="#about"
                 className="font-mono bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size]"
               >
-                <span className="max-[767px]:text-4xl text-lg">About</span>
+                <span className="max-[767px]:text-4xl text-lg">
+                  {t("About")}
+                </span>
               </a>
             </li>
             <li className="flex justify-center  items-center gap-1">
@@ -57,8 +73,24 @@ export const Encabezado = () => {
                 href="#projects"
                 className="font-mono relative bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size]"
               >
-                <span className="max-[767px]:text-4xl text-lg">Proyectos</span>
+                <span className="max-[767px]:text-4xl text-lg">
+                  {t("Proyects")}
+                </span>
               </a>
+            </li>
+            <li className="flex justify-center  items-center gap-1">
+              <button
+                className="hover:cursor-pointer"
+                onClick={() => cambiarIdioma("es")}
+              >
+                <img src="./Es.png" alt="" className="h-7 w-7" />
+              </button>
+              <button
+                className="hover:cursor-pointer"
+                onClick={() => cambiarIdioma("en")}
+              >
+                <img src="./En.png" alt="" className="h-10 w-10" />
+              </button>
             </li>
           </ul>
         </div>

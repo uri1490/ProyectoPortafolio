@@ -7,10 +7,13 @@ export const MovilDescripcion = () => {
     <>
       <div className="hidden max-[767px]:flex flex-col h-full w-full items-center gap-2">
         <img
-          src="./f2.jpg"
+          src="./perfil3.PNG"
           alt=""
-          className=" h-[20%] md:w-[50%] lg:w-[60%] 2xl:w-[70%] "
+          className=" sm:h-[20%] w-[30%] sm:w-[40%] md:w-[50%] lg:w-[60%] 2xl:w-[70%] "
         />
+        <h1 className="border-t-2 border-b-2 font-semibold text-xl 2xl:text-lg text-[#14FFEC] text-center">
+          Ing.José Uriel Reyes Vargas
+        </h1>
         <div className=" text-white ">
           <h1 className=" md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
             Acerca de mi

@@ -1,6 +1,8 @@
 import React from "react";
-
+import { VscDebugBreakpointData } from "react-icons/vsc";
+import { useTranslation } from "react-i18next";
 export const Carrusel2 = () => {
+  const { t } = useTranslation();
   return (
     <div className="hidden max-[767px]:flex slideProyect h-3/4 flex-col justify-center items-center ">
       <ul className="flex no-scrollbar  gap-4 max-[500px]:max-w-sm max-w-lg overflow-x-auto scroll-smooth snap-x ">
@@ -12,12 +14,7 @@ export const Carrusel2 = () => {
             className="snap-center h-1/2 max-[500px]:max-w-sm max-w-lg rounded-md   shadow-xl"
           />
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              deserunt assumenda nihil dolorem reiciendis, repellendus,
-              temporibus natus delectus veniam odit officia odio perspiciatis
-              minus porro adipisci repellat minima eligendi officiis.
-            </p>
+            <p>{t("descEncriptador")}</p>
           </div>
         </li>
         <li className="flex flex-col gap-4">
@@ -28,12 +25,7 @@ export const Carrusel2 = () => {
             className="snap-center h-1/2 max-[500px]:max-w-sm max-w-lg rounded-md   shadow-xl"
           />
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              deserunt assumenda nihil dolorem reiciendis, repellendus,
-              temporibus natus delectus veniam odit officia odio perspiciatis
-              minus porro adipisci repellat minima eligendi officiis.
-            </p>
+            <p>{t("descXray")}</p>
           </div>
         </li>
         <li className="flex flex-col gap-4">
@@ -44,12 +36,7 @@ export const Carrusel2 = () => {
             className="rounded-md snap-center h-1/2 max-[500px]:max-w-sm max-w-lg   shadow-xl"
           />
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              deserunt assumenda nihil dolorem reiciendis, repellendus,
-              temporibus natus delectus veniam odit officia odio perspiciatis
-              minus porro adipisci repellat minima eligendi officiis.
-            </p>
+            <p>{t("descBateria")}</p>
           </div>
         </li>
         <li className="flex flex-col gap-4 items-center snap-center">
@@ -60,12 +47,7 @@ export const Carrusel2 = () => {
             className="rounded-md  snap-center h-1/2 max-[500px]:max-w-sm max-w-lg  shadow-xl"
           />
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              deserunt assumenda nihil dolorem reiciendis, repellendus,
-              temporibus natus delectus veniam odit officia odio perspiciatis
-              minus porro adipisci repellat minima eligendi officiis.
-            </p>
+            <p>{t("descFrm")}</p>
           </div>
         </li>
         <li className=" flex flex-col gap-4">
@@ -76,12 +58,7 @@ export const Carrusel2 = () => {
             className="rounded-md snap-center h-1/2 max-[500px]:max-w-sm max-w-lg  shadow-xl"
           />
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              deserunt assumenda nihil dolorem reiciendis, repellendus,
-              temporibus natus delectus veniam odit officia odio perspiciatis
-              minus porro adipisci repellat minima eligendi officiis.
-            </p>
+            <p>{t("DescApi")}</p>
           </div>
         </li>
         <li className=" flex flex-col gap-4">
@@ -92,12 +69,7 @@ export const Carrusel2 = () => {
             className="rounded-md snap-center h-1/2 max-[500px]:max-w-sm max-w-lg  shadow-xl"
           />
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              deserunt assumenda nihil dolorem reiciendis, repellendus,
-              temporibus natus delectus veniam odit officia odio perspiciatis
-              minus porro adipisci repellat minima eligendi officiis.
-            </p>
+            <p>{t("descTraductor")}</p>
           </div>
         </li>
         <li className=" flex flex-col gap-4">
@@ -108,12 +80,7 @@ export const Carrusel2 = () => {
             className="rounded-md snap-center h-1/2 max-[500px]:max-w-sm max-w-lg  shadow-xl"
           />
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              deserunt assumenda nihil dolorem reiciendis, repellendus,
-              temporibus natus delectus veniam odit officia odio perspiciatis
-              minus porro adipisci repellat minima eligendi officiis.
-            </p>
+            <p>{t("descSipae")}</p>
           </div>
         </li>
         <li className=" flex flex-col gap-4">
@@ -124,12 +91,7 @@ export const Carrusel2 = () => {
             className="rounded-md snap-center h-1/2 max-[500px]:max-w-sm max-w-lg  shadow-xl"
           />
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              deserunt assumenda nihil dolorem reiciendis, repellendus,
-              temporibus natus delectus veniam odit officia odio perspiciatis
-              minus porro adipisci repellat minima eligendi officiis.
-            </p>
+            <p>{t("descSige")}</p>
           </div>
         </li>
       </ul>

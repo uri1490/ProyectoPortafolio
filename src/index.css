@@ -237,15 +237,14 @@
   }
 
   .div2 {
-    width: 0%;
     height: 0%;
 
     transition: all 0.5s;
   }
   .contMRF:hover > .div2 {
-    width: 100%;
     height: 100%;
-    border-radius: 6px;
+
+    z-index: 20;
   }
   .descripcionMRF,
   .tituloMRF {
@@ -451,5 +450,54 @@
   }
   .parrafo {
     font-size: 34px;
+  }
+
+  .hoverBento:hover > :not(:hover) {
+    opacity: 0.3;
+  }
+
+  /* descripcionMonitorSlider */
+  .hoverMedalla {
+    cursor: pointer;
+  }
+  .hoverTrofeo {
+    cursor: pointer;
+  }
+  .hoverDiploma {
+    cursor: pointer;
+  }
+
+  .medalla {
+    opacity: 0;
+  }
+  .trofeo {
+    opacity: 0;
+  }
+  .diploma {
+    opacity: 0;
+  }
+  .contenedorMedalla {
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  .contenedorDiploma {
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  .contenedorTrofeo {
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  .hoverMedalla:hover ~ .contenedorMedalla,
+  .medalla {
+    opacity: 1;
+  }
+  .hoverTrofeo:hover ~ .contenedorTrofeo,
+  .trofeo {
+    opacity: 1;
+  }
+  .hoverDiploma:hover ~ .contenedorDiploma,
+  .diploma {
+    opacity: 1;
   }
 }

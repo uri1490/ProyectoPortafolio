@@ -6,26 +6,31 @@ import { GiDiploma, GiTeacher, GiSkills } from "react-icons/gi";
 import { ListaIconosCarrusel } from "./ListaIconosCarrusel";
 import { TextoDescripcion } from "./TextoDescripcion";
 import { VscDebugBreakpointData } from "react-icons/vsc";
+import { useTranslation } from "react-i18next";
 export const MonitorDescripcion = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="hidden md:flex flex-col   ">
         <div className="w-full h-full  flex gap-2">
           <div className="flex flex-col  items-center md:w-[20%] lg:w-[25%] 2xl:w-[25%]   p-1 gap-2 bg-slate-950 rounded-md">
-            <div className=" flex justify-center h-[30%] ">
+            <div className=" flex justify-center  w-full  flex-col gap-3">
               <img
-                src="./f2.jpg"
+                src="./perfil3.PNG"
                 alt=""
-                className=" object-cover rounded-md h-full w-full"
+                className=" object-contain rounded-md h-3/4"
               />
+              <h1 className="border-t-2 border-b-2 font-semibold text-xl 2xl:text-lg text-[#14FFEC] text-center">
+                Ing.José Uriel Reyes Vargas
+              </h1>
             </div>
             <div className="flex h-[70%] text-xs  text-white">
-              <div className=" w-full flex flex-col place-content-evenly">
+              <div className=" w-full flex flex-col place-content-around">
                 <div>
                   <div className="flex items-center">
                     <FaGraduationCap className="h-5 w-5 fill-[#14FFEC]" />
                     <h1 className="font-light text-xl 2xl:text-lg text-[#14FFEC]">
-                      <b>FORMACIÓN ACADÉMICA</b>
+                      <b>{t("Formacion")}</b>
                     </h1>
                   </div>
 
@@ -46,7 +51,7 @@ export const MonitorDescripcion = () => {
                   <div className="flex items-center">
                     <FaTools className="h-6 w-5 fill-[#14FFEC]" />
                     <h1 className="font-light text-xl 2xl:text-lg text-[#14FFEC]">
-                      <b>EXPERIENCIA LABORAL</b>
+                      <b>{t("Experiencia")}</b>
                     </h1>
                   </div>
 
@@ -69,34 +74,34 @@ export const MonitorDescripcion = () => {
                       className="h-6 w-6 fill-[#14FFEC]"
                     />
                     <h1 className="font-light text-xl 2xl:text-lg text-[#14FFEC]">
-                      <b>APTITUDES</b>
+                      <b>{t("Aptitudes")}</b>
                     </h1>
                   </div>
 
                   <ul className="ml-2">
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <p className="2xl:text-lg">Resolucion de problemas</p>
+                      <p className="2xl:text-lg">{t("Resolucion")}</p>
                     </li>
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <p className="2xl:text-lg">Competencias digitales</p>
+                      <p className="2xl:text-lg">{t("Competencias")}</p>
                     </li>
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <p className="2xl:text-lg">Adaptabilidad</p>
+                      <p className="2xl:text-lg">{t("Adaptabilidad")}</p>
                     </li>
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <p className="2xl:text-lg">Comunicación</p>
+                      <p className="2xl:text-lg">{t("Comunicacion")}</p>
                     </li>
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <p className="2xl:text-lg">Trabajo en equipo</p>
+                      <p className="2xl:text-lg">{t("Trabajo")}</p>
                     </li>
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <p className="2xl:text-lg"> Autocontrol</p>
+                      <p className="2xl:text-lg">{t("Autocontrol")}</p>
                     </li>
                   </ul>
                 </div>
@@ -104,79 +109,78 @@ export const MonitorDescripcion = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:w-[80%] lg:w-[75%] 2xl:w-full  gap-2 ">
-            <div className="min-[1500px]:h-[40%] h-[30%] text-white bg-slate-950 rounded-md">
-              <h1 className=" md:text-[20px] lg:text-3xl  text-yellow-500 font-mono">
-                <b>Acerca de mi</b>
+          <div className="flex flex-col md:w-[80%] lg:w-[75%] 2xl:w-full  gap-2 bg-slate-950 ">
+            <div className="p-2  text-white  bg-slate-950 rounded-md">
+              <h1 className=" md:text-[20px] lg:text-2xl  text-yellow-500 font-mono">
+                <b>{t("Aboutme")}</b>
               </h1>
               <TextoDescripcion></TextoDescripcion>
             </div>
-            <div className=" relative min-[1500px]:h-[60%] h-[70%]  grid grid-cols-9 grid-rows-8 gap-1">
+            <div className=" relative min-[1500px]:h-[60%] h-[70%]  grid grid-cols-9 grid-rows-8 bg-slate-950 rounded-md">
               <div className="text-center col-span-9 row-span-1 col-start-1 row-start-1 md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
-                Logros
+                {t("Logros")}
               </div>
-              <div className="contDiploma relative flex items-center justify-center  col-span-3 row-span-3 p-1    rounded-lg overflow-hidden">
-                <div className="test3 h-[200%] w-[200%] rounded-full absolute"></div>
-                <div className=" bg-fondoCard-enc bg-contain  w-full h-full z-10  flex flex-col items-center p-2 gap-2  rounded-lg">
-                  <GiTeacher className="h-11 w-11  rounded-md fill-[#14FFEC]" />
-                  <p className="text-sm font-semibold h-full text-white bg-black/60 rounded-md">
-                    Participe como instructor en el uso de equipo radiologico y
-                    el software de adquisición de imagenes de rayos x en CMR.
+              <div className="hoverMedalla col-start-1 row-start-3 col-span-2 flex justify-center bg-slate-950">
+                <GiTeacher className="  fill-[#14FFEC] h-11 w-11  "></GiTeacher>
+              </div>
+              <div className="hoverDiploma col-start-1 row-start-4 col-span-2 flex justify-center bg-slate-950">
+                <GiDiploma className=" fill-[#14FFEC] h-11 w-11 "></GiDiploma>
+              </div>
+              <div className=" hoverTrofeo col-start-1 row-start-5 col-span-2 flex justify-center bg-slate-950">
+                <FaTrophy className=" fill-[#14FFEC] h-11 w-11 "></FaTrophy>
+              </div>
+              <div className="contenedorP  bg-slate-950 col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center md:items-center lg:items-center gap-10">
+                <div className="h-full flex justify-center flex-col gap-2">
+                  <h1 className="text-white">{t("Cedula")}</h1>
+                  <hr />
+                  <p className="text-sm font-semibold text-white bg-black/60 rounded-md">
+                    {t("CedulaTexto")}
                   </p>
                 </div>
+
+                <img
+                  src="./titulo2.png"
+                  alt="titulo"
+                  className="titulo h-3/4 w-3/4 md:h-[40%] md:w-[40%] lg:w-1/2 lg:h-1/2 xl:h-3/4 xl:w-[60%]"
+                />
               </div>
-              <div className="logros1 flex absolute mt-32 ml-40 rounded-lg h-1/2 w-1/2 bg-white shadow-2xl shadow-black p-2">
+              <div className="contenedorMedalla relative bg-slate-950 col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
+                <div className="h-full flex justify-center flex-col gap-2">
+                  <h1 className="text-white">{t("Instructor")}</h1>
+                  <hr />
+                  <p className="text-sm font-semibold text-white bg-black/60 rounded-md">
+                    {t("InstructorTexto")}
+                  </p>
+                </div>
                 <img
                   src="./diploma.jpg"
                   alt="diploma"
-                  className=" rounded-lg h-full w-full shadow-2xl shadow-black"
+                  className="diploma  h-full w-3/5"
                 />
               </div>
-              <div className="contChalleng relative flex items-center justify-center  z-10 col-span-3 row-span-3 p-1   rounded-lg overflow-hidden">
-                <div className="test3 h-[200%] w-[200%] rounded-full absolute"></div>
-                <div className="bg-fondoCard-enc bg-contain z-10 w-full h-full flex flex-col items-center p-2 gap-2  rounded-lg">
-                  <GiDiploma className="fill-[#14FFEC] h-11 w-11" />
-                  <p className="text-sm font-semibold h-full text-white bg-black/60 rounded-md">
-                    Participe en un bootcamp de programacion en el cual se te
-                    otorgaban insignias por terminar los desafios que se
-                    presentaban al termino de un curso, uno de ellos fue
-                    Springboot y el otro fue con html, css y javascript.
+              <div className="contenedorDiploma relative bg-slate-950 col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
+                <div className="h-full flex justify-center flex-col gap-2">
+                  <h1 className="text-white">{t("Insignia")}</h1>
+                  <hr />
+                  <p className="text-sm font-semibold text-white bg-black/60 rounded-md">
+                    {t("InsigniaTexto")}
                   </p>
                 </div>
-              </div>
-              <div className="logros2 flex mt-32 2xl:ml-32 ml-40 absolute gap-1 h-1/2 2xl:w-3/5 w-1/2 bg-white rounded-lg shadow-2xl shadow-black p-2 ">
-                <img
-                  src="./challenge3.png"
-                  alt="spring"
-                  className="w-1/2 h-full shadow-2xl shadow-black rounded-lg"
-                />
                 <img
                   src="./challenge1.png"
                   alt="encriptador"
-                  className="w-1/2 h-full shadow-2xl shadow-black rounded-lg"
+                  className="medalla h-full"
                 />
               </div>
-              <div className="contPremio relative flex items-center justify-center col-span-3 row-span-3 p-1   rounded-lg overflow-hidden">
-                <div className="test3 h-[200%] w-[200%] rounded-full absolute"></div>
-                <div className="bg-fondoCard-enc bg-contain z-10 rounded-lg flex flex-col items-center  p-2 gap-2 w-full h-full">
-                  {/* <img
-                    src="./trofeo.svg"
-                    alt="oscar"
-                    className="h-9 fill-red-500"
-                  /> */}
-                  <FaTrophy className="fill-[#14FFEC] h-11 w-11" />
-                  <p className=" text-sm font-semibold h-full text-white bg-black/60 rounded-md">
-                    Durante mi estancia en CMR se me otorgo un reconocimiento
-                    por el cumplimiento de mis labores.
+              <div className="contenedorTrofeo   bg-slate-950 col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
+                <div className=" h-full flex justify-center flex-col gap-2">
+                  <h1 className="text-white">{t("Reconocimiento")}</h1>
+                  <hr />
+                  <p className="text-sm font-semibold text-white bg-black/60 rounded-md">
+                    {t("ReconocimientoTexto")}
                   </p>
                 </div>
-              </div>
-              <div className=" logros3 rounded-lg mt-32 2xl:ml-32 ml-60 absolute h-1/2 w-2/5 p-2 bg-white">
-                <img
-                  src="./oscar.webp"
-                  alt="oscar"
-                  className="rounded-lg h-full w-full shadow-2xl shadow-black object-fill  "
-                />
+                <img src="./oscar.PNG" alt="oscar" className="trofeo   w-1/4" />
               </div>
               <div className="  col-span-9 row-span-2 row-start-7  rounded-md">
                 <div className="w-full h-[30%] flex items-center justify-center">
