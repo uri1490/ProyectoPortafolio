@@ -47,8 +47,8 @@ export const Credencial = () => {
           <div className=" md:h-[70%]  h-full relative  md:w-[50%]  flex justify-center  items-center overflow-hidden ">
             <div className="absolute foto  z-10 bg-cyan-300  h-full w-[90%] rounded-md"></div>
             <img
-              src="./perfil1.png"
-              alt=""
+              src="./perfil1.webp"
+              alt="foto usuario"
               className="user object-contain max-[767px]:h-[90%] h-4/5 w-4/5 z-20 mb-5"
             />
           </div>
