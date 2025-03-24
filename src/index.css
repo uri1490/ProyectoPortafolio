@@ -492,6 +492,7 @@
   .medalla {
     opacity: 1;
   }
+
   .hoverTrofeo:hover ~ .contenedorTrofeo,
   .trofeo {
     opacity: 1;
@@ -499,5 +500,14 @@
   .hoverDiploma:hover ~ .contenedorDiploma,
   .diploma {
     opacity: 1;
+  }
+  .hoverMedalla:hover ~ .hoverCedula {
+    opacity: 0;
+  }
+  .hoverTrofeo:hover ~ .hoverCedula {
+    opacity: 0;
+  }
+  .hoverDiploma:hover ~ .hoverCedula {
+    opacity: 0;
   }
 }

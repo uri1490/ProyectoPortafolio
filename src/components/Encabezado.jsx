@@ -24,9 +24,9 @@ export const Encabezado = () => {
 
   return (
     <>
-      <nav className=" flex    w-full justify-between  text-yellow-50 h-[5vh] md:h-[5vh] sticky z-50 top-0">
+      <nav className=" flex   backdrop-blur-sm w-full justify-between  text-yellow-50 h-[5vh] md:h-[5vh] sticky z-50 top-0">
         <div className="z-50 flex items-center">
-          <h1 className=" text-lg font-light">
+          <h1 className=" text-lg font-light backdrop-blur-sm ">
             <b>{t("Portafolio")} &#129299;</b>
           </h1>
         </div>

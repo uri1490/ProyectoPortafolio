@@ -3,6 +3,11 @@
   "Sujeto": "soy",
   "Oficio": "desarrollador",
   "Descargar": "Descargar",
+  "Encriptador": "Encriptador",
+  "Traductor": "Traductor SQL",
+  "Panel": "Panel",
+  "Simulador": "Simulador",
+  "Medidor": "Medidor de Voltaje",
   "Home": "Inicio",
   "About": "Acerca",
   "Proyects": "Proyectos",
@@ -36,5 +41,9 @@
   "descTraductor": "Aplicacion que se encargaba de convertir las instrucciones del usuario a comandos SQL con los cuales se podia realizar busquedas, actualizar y eliminar registros con CSharp y SQLserver.",
   "descSipae": "Sistema de control escolar en el cual participe realizando validaciones y creación de diagramas de flujo.",
   "descSige": "Sistema encargado de la administracion de los casos penales del estado de Queretaro en la cual me toco realizar correcciones y validaciones de codigo.",
-  "descDetector": "Trabaje con equipo medico que se utilizaba para tomar radiografias en pacientes."
+  "descDetector": "Trabaje con equipo medico que se utilizaba para tomar radiografias en pacientes.",
+  "FooterText": "Pagina realizada con React y Tailwind",
+  "FooterFrase": "Si no funciona la primera vez llamalo versión 1.0",
+  "Year": "Año",
+  "Years": "Años"
 }

@@ -13,7 +13,7 @@ export const MonitorDescripcion = () => {
     <>
       <div className="hidden md:flex flex-col   ">
         <div className="w-full h-full  flex gap-2">
-          <div className="flex flex-col  items-center md:w-[20%] lg:w-[25%] 2xl:w-[25%]   p-1 gap-2 bg-slate-950 rounded-md">
+          <div className="flex flex-col  items-center md:w-[20%] lg:w-[25%] 2xl:w-[25%]   p-1 gap-2 bg-slate-900 rounded-md">
             <div className=" flex justify-center  w-full  flex-col gap-3">
               <img
                 src="./perfil3.PNG"
@@ -58,11 +58,11 @@ export const MonitorDescripcion = () => {
                   <ul className="ml-2">
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <h1 className="2xl:text-lg">SINTELTI | 1 Año</h1>
+                      <h1 className="2xl:text-lg">SINTELTI | 1 {t("Year")}</h1>
                     </li>
                     <li className="flex items-center ml-2">
                       <VscDebugBreakpointData />
-                      <h1 className="2xl:text-lg">CMR | 5 años</h1>
+                      <h1 className="2xl:text-lg">CMR | 5 {t("Years")}</h1>
                     </li>
                   </ul>
                 </div>
@@ -110,26 +110,26 @@ export const MonitorDescripcion = () => {
           </div>
 
           <div className="flex flex-col md:w-[80%] lg:w-[75%] 2xl:w-full  gap-2 bg-slate-950 ">
-            <div className="p-2  text-white  bg-slate-950 rounded-md">
+            <div className="p-2  text-white  bg-black bg-contain rounded-md">
               <h1 className=" md:text-[20px] lg:text-2xl  text-yellow-500 font-mono">
                 <b>{t("Aboutme")}</b>
               </h1>
               <TextoDescripcion></TextoDescripcion>
             </div>
-            <div className=" relative min-[1500px]:h-[60%] h-[70%]  grid grid-cols-9 grid-rows-8 bg-slate-950 rounded-md">
+            <div className=" relative min-[1500px]:h-[60%]   grid grid-cols-9 grid-rows-8 bg-fondoCard-pen2 bg-cover rounded-md place-content-between">
               <div className="text-center col-span-9 row-span-1 col-start-1 row-start-1 md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
                 {t("Logros")}
               </div>
-              <div className="hoverMedalla col-start-1 row-start-3 col-span-2 flex justify-center bg-slate-950">
+              <div className="hoverMedalla col-start-1 row-start-3 col-span-2 flex justify-center ">
                 <GiTeacher className="  fill-[#14FFEC] h-11 w-11  "></GiTeacher>
               </div>
-              <div className="hoverDiploma col-start-1 row-start-4 col-span-2 flex justify-center bg-slate-950">
+              <div className="hoverDiploma col-start-1 row-start-4 col-span-2 flex justify-center ">
                 <GiDiploma className=" fill-[#14FFEC] h-11 w-11 "></GiDiploma>
               </div>
-              <div className=" hoverTrofeo col-start-1 row-start-5 col-span-2 flex justify-center bg-slate-950">
+              <div className=" hoverTrofeo col-start-1 row-start-5 col-span-2 flex justify-center ">
                 <FaTrophy className=" fill-[#14FFEC] h-11 w-11 "></FaTrophy>
               </div>
-              <div className="contenedorP  bg-slate-950 col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center md:items-center lg:items-center gap-10">
+              <div className="hoverCedula contenedorP   col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center md:items-center lg:items-center gap-10">
                 <div className="h-full flex justify-center flex-col gap-2">
                   <h1 className="text-white">{t("Cedula")}</h1>
                   <hr />
@@ -144,7 +144,7 @@ export const MonitorDescripcion = () => {
                   className="titulo h-3/4 w-3/4 md:h-[40%] md:w-[40%] lg:w-1/2 lg:h-1/2 xl:h-3/4 xl:w-[60%]"
                 />
               </div>
-              <div className="contenedorMedalla relative bg-slate-950 col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
+              <div className="contenedorMedalla relative col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
                 <div className="h-full flex justify-center flex-col gap-2">
                   <h1 className="text-white">{t("Instructor")}</h1>
                   <hr />
@@ -158,7 +158,7 @@ export const MonitorDescripcion = () => {
                   className="diploma  h-full w-3/5"
                 />
               </div>
-              <div className="contenedorDiploma relative bg-slate-950 col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
+              <div className="contenedorDiploma relative  col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
                 <div className="h-full flex justify-center flex-col gap-2">
                   <h1 className="text-white">{t("Insignia")}</h1>
                   <hr />
@@ -172,7 +172,7 @@ export const MonitorDescripcion = () => {
                   className="medalla h-full"
                 />
               </div>
-              <div className="contenedorTrofeo   bg-slate-950 col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
+              <div className="contenedorTrofeo    col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
                 <div className=" h-full flex justify-center flex-col gap-2">
                   <h1 className="text-white">{t("Reconocimiento")}</h1>
                   <hr />

@@ -23,8 +23,8 @@ export const Credencial = () => {
               <b className="">{t("Saludo")},</b>
             </h1>
             <p className="text-[#212121] flex text-left w-[70%] font-mono items-end gap-4 text-5xl 2xl:text-7xl max-[767px]:text-center">
-              <b>{t("Sujeto")}</b>
               <span className="">
+                <b>{t("Sujeto")} </b>
                 <b className="2xl:text-7xl text-5xl text-yellow-300 neon">
                   Uriel
                 </b>
@@ -38,9 +38,15 @@ export const Credencial = () => {
               </span>
             </p>
             <div className="flex w-[70%]  gap-10 max-[767px]:justify-center items-center ">
-              <FaGithub className="w-6 h-10 cursor-pointer trasition linear duration-500 hover:fill-teal-300"></FaGithub>
-
-              <TiSocialLinkedinCircular className="h-9 w-9 cursor-pointer trasition linear duration-500 hover:fill-teal-300"></TiSocialLinkedinCircular>
+              <a href="https://github.com/uri1490" target="_blank">
+                <FaGithub className="w-6 h-10 cursor-pointer trasition linear duration-500 hover:fill-teal-300"></FaGithub>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jose-uriel-isc"
+                target="_blank"
+              >
+                <TiSocialLinkedinCircular className="h-9 w-9 cursor-pointer trasition linear duration-500 hover:fill-teal-300"></TiSocialLinkedinCircular>
+              </a>
             </div>
           </div>
 
@@ -55,7 +61,7 @@ export const Credencial = () => {
         </div>
         <div className="z-10  flex max-[767px]:h-[20%] md:w-full w-full max-[767px]:justify-start  items-center ">
           <a
-            href="./certificado.pdf"
+            href="./CV Reyes Vargas Jose Uriel Ingeniero en Sistemas Computacionales.pdf"
             // download={"../..public/certificado.pdf"}
             target="_blank"
           >

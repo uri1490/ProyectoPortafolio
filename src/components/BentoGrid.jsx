@@ -8,7 +8,7 @@ export const BentoGrid = () => {
         <div className=" group opacidadApi fondoGradiante  contApi relative col-start-1 row-start-1 col-span-6 row-span-5  rounded-md grid grid-cols-4 grid-rows-4 overflow-hidden">
           {/* <div className="bg-api-enc absolute z-20 api w-full h-full bg-cover  bg-no-repeat "></div> */}
           <div className="bg-api-enc col-span-4 col row-span-4 m-1 rounded-md"></div>
-          <div className="bg-red-500  absolute w-1/2 h-full justify-self-end p-1 rounded-md -z-0 translate-x-full  transition duration-500 ease-in-out   group-hover:translate-x-0 group-hover:z-50  group-cursor-pointer ">
+          <div className="backdrop-blur-sm bg-white/30  absolute w-1/2 h-full justify-self-end p-1 rounded-md -z-0 translate-x-full  transition duration-500 ease-in-out   group-hover:translate-x-0 group-hover:z-50  group-cursor-pointer shadow-lg">
             <div>
               <h1 className="text-center">Api Rest</h1>
               <hr className=" text-center" />
@@ -28,9 +28,10 @@ export const BentoGrid = () => {
         </div>
 
         <div className="  fondoGradiante show border-4 border-white relative flex justify-center items-center  col-start-10 row-start-1 col-span-3 row-span-4 overflow-hidden rounded-md">
-          <div className="bg-iray-enc estrella absolute w-full h-full bg-center bg-contain  bg-no-repeat"></div>
-          <div className="most absolute flex w-full items-center justify-end flex-col h-full   ">
-            <h1 className="tit">IRay</h1>
+          <div className="bg-iray-enc  estrella absolute w-full h-full bg-center bg-contain  bg-no-repeat"></div>
+          <div className="most  backdrop-blur-sm bg-white/30 absolute flex w-full items-center justify-end flex-col h-full   ">
+            <h1 className="tit2">IRay</h1>
+            <hr className="tit2 text-center   w-11/12" />
             <p className="tit2 text-sm text-justify">{t("descDetector")}</p>
           </div>
           {/* <div className="bg-green-950">a</div>
@@ -43,14 +44,16 @@ export const BentoGrid = () => {
             <div className="bg-atmel-enc border-4  rounded-md front absolute bg-contain w-full h-full bg-center bg-no-repeat "></div>
             <div className=" back absolute w-full h-full flex flex-col items-center justify-center rounded-md back">
               <h1 className="font-bold">Medidor de voltaje</h1>
+              <hr className="text-center   w-11/12" />
               <span>{t("descBateria")}</span>
             </div>
           </div>
         </div>
         <div className="bg-white contMRF border-4 border-white relative  flex justify-center items-center  col-start-7 row-start-1 col-span-3 row-span-4 overflow-hidden rounded-md">
           <div className="bg-mrf-enc z-10 absolute w-full h-full bg-center bg-contain bg-no-repeat "></div>
-          <div className="bg-yellow-300 div2 flex flex-col items-center justify-center">
+          <div className="backdrop-blur-sm bg-white/30 div2 flex flex-col items-center justify-center">
             <h1 className="descripcionMRF">MRF</h1>
+            <hr className="descripcionMRF text-center   w-11/12" />
             <p className="descripcionMRF  text-justify">{t("descFrm")}</p>
           </div>
         </div>
@@ -69,16 +72,18 @@ export const BentoGrid = () => {
         </div>
         <div className="fondoGradiante p-1 col-start-1 row-start-6 col-span-4 row-span-3 rounded-md">
           <div className="bg-sige8-enc w-full h-full bg-center bg-cover bg-no-repeat rounded-md overflow-hidden">
-            <div className="bg-green-400 h-full opacity-0 transition ease-linear duration-500 hover:rotate-[360deg] hover:opacity-100">
+            <div className="backdrop-blur-sm bg-white/30 h-full opacity-0 transition ease-linear duration-500 hover:rotate-[360deg] hover:opacity-100">
               <h1 className="text-center">SIGENUC</h1>
+              <hr className="text-center   w-11/12" />
               <p>{t("descSige")}</p>
             </div>
           </div>
         </div>
         <div className="bg-white border-4 border-white contenedorSipae relative col-start-5 row-start-6 col-span-3 row-span-3 rounded-md overflow-hidden">
-          <div className="bg-yellow-400 descripcionSipae absolute flex items-center justify-center flex-col h-full w-full rounded-md">
-            <h1 className="text-white font-semibold">SIPAE</h1>
-            <p className="text-white">{t("descSipae")}</p>
+          <div className="backdrop-blur-sm bg-white/30 descripcionSipae absolute flex items-center justify-center flex-col h-full w-full rounded-md">
+            <h1 className="text-black font-semibold">SIPAE</h1>
+            <hr className="text-center   w-11/12" />
+            <p className="text-black">{t("descSipae")}</p>
           </div>
           <div className="bg-sipae-enc fondoSipae absolute w-full h-full bg-center bg-contain bg-no-repeat "></div>
         </div>
@@ -86,6 +91,7 @@ export const BentoGrid = () => {
           <div className="bg-sql-enc absolute w-full h-full bg-center bg-contain bg-no-repeat  "></div>
           <div className="glass absolute flex items-center justify-center flex-col left-96 h-full w-full rounded-md backdrop-blur-sm bg-white/30">
             <h1 className="text-white font-semibold">Traductor SQL</h1>
+            <hr className="text-center   w-11/12" />
             <p className="text-white">{t("descTraductor")}</p>
           </div>
         </div>
@@ -97,7 +103,7 @@ export const BentoGrid = () => {
               className="ovni h-[15%] w-[10%] absolute "
             />
             <div className="bg-fondoOvni-enc bg-contain flex flex-col items-center justify-center descripcionEncrip h-full w-full absolute ">
-              <h1 className="text-white font-semibold">Traductor SQL</h1>
+              <h1 className="text-white font-semibold">{t("Encriptador")}</h1>
               <p className="text-white">{t("descEncriptador")}</p>
             </div>
           </div>

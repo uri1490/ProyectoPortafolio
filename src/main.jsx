@@ -8,7 +8,7 @@ import { initReactI18next } from "react-i18next";
 import es from "../i18n/Espanol/es.json";
 import en from "../i18n/Ingles/en.json";
 i18next.use(initReactI18next).init({
-  lng: "en",
+  lng: "es",
   interpolation: {
     escapeValue: false,
   },
