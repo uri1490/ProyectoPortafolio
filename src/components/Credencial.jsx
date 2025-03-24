@@ -22,7 +22,7 @@ export const Credencial = () => {
             <h1 className="text-[#212121] 2xl:text-7xl text-5xl w-[70%] font-mono max-[767px]:text-center">
               <b className="">{t("Saludo")},</b>
             </h1>
-            <p className="text-[#212121] flex text-left w-[70%] font-mono items-end gap-4 text-5xl 2xl:text-7xl max-[767px]:text-center">
+            <p className="text-[#212121]  text-left w-[70%] font-mono items-end gap-4 text-5xl 2xl:text-7xl max-[767px]:text-center">
               <span className="">
                 <b>{t("Sujeto")} </b>
                 <b className="2xl:text-7xl text-5xl text-yellow-300 neon">
@@ -59,13 +59,13 @@ export const Credencial = () => {
             />
           </div>
         </div>
-        <div className="z-10  flex max-[767px]:h-[20%] md:w-full w-full max-[767px]:justify-start  items-center ">
+        <div className="z-10  flex max-[767px]:h-[20%] md:w-full w-full min-[767px]:justify-start justify-center  items-center ">
           <a
             href="./CV Reyes Vargas Jose Uriel Ingeniero en Sistemas Computacionales.pdf"
             // download={"../..public/certificado.pdf"}
             target="_blank"
           >
-            <button className=" flex max-[767px]:h-16 max-[767px]:w-48 items-center ml-20 py-1 px-4 h-12  bg-[#212121] hover:border border-[#14FFEC] rounded-lg space-x-3 shadow-md transition duration-300 ease-linear hover:text-[#14FFEC]  hover:shadow-[0px_1px_7px_5px_#14FFEC] ">
+            <button className=" flex max-[767px]:h-16 max-[767px]:w-48 items-center min-[767px]:ml-20 py-1 px-4 h-12  bg-[#212121] hover:border border-[#14FFEC] rounded-lg space-x-3 shadow-md transition duration-300 ease-linear hover:text-[#14FFEC]  hover:shadow-[0px_1px_7px_5px_#14FFEC] ">
               <FaFileDownload className="fill-[#14FFEC] h-12 animate-bounce" />
               <span className="text-white max-[767px]:text-xl  ">
                 {t("Descargar")} CV
