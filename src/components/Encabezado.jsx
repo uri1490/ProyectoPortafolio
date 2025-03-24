@@ -42,9 +42,11 @@ export const Encabezado = () => {
         <div
           className={`absolute  md:static flex ${
             openNav ? "left-0" : "-left-[2000px]"
+          } ${
+            openNav ? "bg-black/50" : "bg-black/0"
           } justify-center duration-300  w-full md:w-1/2 h-[100vh]  backdrop-blur-sm  md:h-full items-center z-10`}
         >
-          <ul className="flex items-center   w-full justify-center space-y-10 md:space-y-0 flex-col md:flex-row md:justify-between">
+          <ul className="flex items-center   w-full justify-center space-y-10 md:space-y-0 flex-col md:flex-row md:justify-between ">
             <li className="flex justify-center items-center gap-1">
               <FaHome className="max-[767px]:h-10 max-[767px]:w-10" />
               <a
