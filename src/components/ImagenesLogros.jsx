@@ -26,9 +26,8 @@ export const ImagenesLogros = () => {
       id: 2,
     },
   ];
-
-  return (
-    <ul className="bg-white gap-1 max-[500px]:max-w-sm max-w-lg flex rounded-md overflow-x-auto scroll-smooth snap-x text-xs ">
+  {
+    /* <ul className="bg-white gap-1 max-[500px]:max-w-sm max-w-lg flex rounded-md overflow-x-auto scroll-smooth snap-x text-xs ">
       {descripcionImagen.map((item) => (
         <li
           key={item.id}
@@ -44,6 +43,25 @@ export const ImagenesLogros = () => {
           </p>
         </li>
       ))}
-    </ul>
+    </ul> */
+  }
+  return (
+    <>
+      {descripcionImagen.map((item) => (
+        <div
+          key={item.id}
+          className="flex flex-col items-center w-3/4  bg-slate-900/30 rounded gap-1 p-1"
+        >
+          <div className="bg-slate-300 flex justify-center rounded-md p-1">
+            <img src={item.imagen} alt="imagen" className="rounded-md w-9/12" />
+          </div>
+          <div>
+            <p className="font-thin   text-sm p-2 text-slate-300">
+              <b>{item.descripcion}</b>
+            </p>
+          </div>
+        </div>
+      ))}
+    </>
   );
 };

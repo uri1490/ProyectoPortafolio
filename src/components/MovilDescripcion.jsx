@@ -25,7 +25,7 @@ export const MovilDescripcion = () => {
           </h1>
           <TextoDescripcion></TextoDescripcion>
         </div>
-        <div className="flex flex-col items-center h-80 w-full   gap-6 text-white">
+        <div className="flex flex-col items-center w-full   gap-6 text-white">
           <CaracteristicasMovilDescripcion />
           <h1 className="md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
             {t("Logros")}
