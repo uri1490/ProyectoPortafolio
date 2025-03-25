@@ -51,7 +51,7 @@ export const Encabezado = () => {
               <FaHome className="max-[767px]:h-10 max-[767px]:w-10" />
               <a
                 href="#home"
-                className="font-mono bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size]"
+                className="font-mono bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size] rounded-sm"
               >
                 <span className="max-[767px]:text-4xl  text-lg">
                   {t("Home")}
@@ -62,7 +62,7 @@ export const Encabezado = () => {
               <FaUserAstronaut className="max-[767px]:h-10 max-[767px]:w-10" />
               <a
                 href="#about"
-                className="font-mono bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size]"
+                className="font-mono bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size] rounded-sm"
               >
                 <span className="max-[767px]:text-4xl text-lg">
                   {t("About")}
@@ -73,7 +73,7 @@ export const Encabezado = () => {
               <FaTools className="max-[767px]:h-10 max-[767px]:w-10" />
               <a
                 href="#projects"
-                className="font-mono relative bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size]"
+                className="font-mono relative bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-no-repeat bg-bottom bg-[length:100%_2px] hover:bg-[length:100%_100%] transition-[background-size] rounded-sm"
               >
                 <span className="max-[767px]:text-4xl text-lg">
                   {t("Proyects")}
