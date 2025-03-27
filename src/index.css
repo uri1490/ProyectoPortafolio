@@ -38,7 +38,7 @@
   }
   /* sombra imagen */
   .foto {
-    mask-image: url("../fondoFoto.png");
+    mask-image: url("../fondoFoto.webp");
     -webkit-mask-position: center;
     mask-position: center bottom;
     -webkit-mask-size: 100%;
@@ -307,7 +307,13 @@
     opacity: 0;
     transition: all 1s;
   }
+  .logros4 {
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+  }
   .contDiploma,
+  .contCert,
   .contChalleng,
   .contPremio:hover {
     cursor: pointer;
@@ -322,6 +328,10 @@
     opacity: 1;
   }
   .contPremio:hover ~ .logros3 {
+    z-index: 50;
+    opacity: 1;
+  }
+  .contCert:hover ~ .logros4 {
     z-index: 50;
     opacity: 1;
   }
@@ -466,6 +476,9 @@
   .hoverDiploma {
     cursor: pointer;
   }
+  .hoverCert {
+    cursor: pointer;
+  }
 
   .medalla {
     opacity: 0;
@@ -474,6 +487,9 @@
     opacity: 0;
   }
   .diploma {
+    opacity: 0;
+  }
+  .cert {
     opacity: 0;
   }
   .contenedorMedalla {
@@ -488,6 +504,10 @@
     opacity: 0;
     transition: all 0.4s;
   }
+  .contenedorCert {
+    opacity: 0;
+    transition: all 0.4s;
+  }
   .hoverMedalla:hover ~ .contenedorMedalla,
   .medalla {
     opacity: 1;
@@ -497,10 +517,18 @@
   .trofeo {
     opacity: 1;
   }
+  .hoverCert:hover ~ .contenedorCert,
+  .cert {
+    opacity: 1;
+  }
   .hoverDiploma:hover ~ .contenedorDiploma,
   .diploma {
     opacity: 1;
   }
+  .hoverCert:hover ~ .hoverCedula {
+    opacity: 0;
+  }
+
   .hoverMedalla:hover ~ .hoverCedula {
     opacity: 0;
   }

@@ -25,6 +25,11 @@ export const ImagenesLogros = () => {
       descripcion: `${t("InsigniaTexto")}`,
       id: 2,
     },
+    {
+      imagen: "./cisco.webp",
+      descripcion: `${t("CertificadoTexto")}`,
+      id: 5,
+    },
   ];
   {
     /* <ul className="bg-white gap-1 max-[500px]:max-w-sm max-w-lg flex rounded-md overflow-x-auto scroll-smooth snap-x text-xs ">

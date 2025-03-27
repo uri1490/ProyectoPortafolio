@@ -22,13 +22,13 @@ export const Carrusel2 = () => {
     {
       id: 3,
       nombre: `${t("Medidor")}`,
-      srcImagen: "./atmel.png",
+      srcImagen: "./atmel.webp",
       descripcion: `${t("descBateria")}`,
     },
     {
       id: 4,
       nombre: `${t("Simulador")}`,
-      srcImagen: "./mrf.PNG",
+      srcImagen: "./mrf.webp",
       descripcion: `${t("descFrm")}`,
     },
     {
@@ -46,13 +46,13 @@ export const Carrusel2 = () => {
     {
       id: 7,
       nombre: "SIPAE",
-      srcImagen: "./sipa2.png",
+      srcImagen: "./sipa2.webp",
       descripcion: `${t("descSipae")}`,
     },
     {
       id: 8,
       nombre: "SIGENUC",
-      srcImagen: "./sige2.png",
+      srcImagen: "./sige2.webp",
       descripcion: `${t("descSige")}`,
     },
   ];
@@ -98,14 +98,11 @@ export const Carrusel2 = () => {
       />
       <ul
         ref={listRef}
-        className="touch-none flex no-scrollbar   max-[500px]:max-w-sm max-w-lg overflow-x-auto scroll-smooth snap-x  rounded-md"
+        className="touch-none bg-black/70 flex no-scrollbar   max-[500px]:max-w-sm max-w-lg overflow-x-auto scroll-smooth snap-x  rounded-md"
       >
         {ImagenesCarrusel.map((item) => {
           return (
-            <li
-              key={item.id}
-              className="flex flex-col bg-fondoCard-enc bg-cover p-2"
-            >
+            <li key={item.id} className="flex flex-col  bg-cover p-2">
               <img
                 src={item.srcImagen}
                 alt=""
@@ -115,14 +112,14 @@ export const Carrusel2 = () => {
                 <h1 className="font-semibold text-center text-yellow-400">
                   {item.nombre}
                 </h1>
-                <hr className="h-1" />
-                <p className="bg-black/70 text-white">{item.descripcion}</p>
+                <hr className="h-1 m-1" />
+                <p className=" text-white m-1 p-1">{item.descripcion}</p>
               </div>
             </li>
           );
         })}
       </ul>
-      <div className="  space-x-4  flex">
+      <div className="  space-x-4  flex mt-1">
         {ImagenesCarrusel.map((_, idx) => (
           <div
             key={idx}

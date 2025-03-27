@@ -37,7 +37,7 @@ export default {
         "fondoOvni-enc": "url('../fondoOvni.jpg')",
         "fondoFoto2-enc": "url('../fondoFoto3.png')",
         "fondoCard-enc": "url('../fondoCard2.jpg')",
-        "fondoCard-wave": "url('../wave2.jpg')",
+        "fondoCard-wave": "url('../wave2.webp')",
         "fondoCard-pen": "url('../f4.jpg')",
         "fondoCard-pen2": "url('../f5.webp')",
       },

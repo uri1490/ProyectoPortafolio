@@ -2,7 +2,7 @@ import React from "react";
 import { FaTrophy, FaGraduationCap } from "react-icons/fa6";
 import { FaTools } from "react-icons/fa";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
-import { GiDiploma, GiTeacher, GiSkills } from "react-icons/gi";
+import { GiDiploma, GiTeacher, GiSkills, GiMedallist } from "react-icons/gi";
 import { ListaIconosCarrusel } from "./ListaIconosCarrusel";
 import { TextoDescripcion } from "./TextoDescripcion";
 import { VscDebugBreakpointData } from "react-icons/vsc";
@@ -120,14 +120,31 @@ export const MonitorDescripcion = () => {
               <div className="text-center col-span-9 row-span-1 col-start-1 row-start-1 md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
                 {t("Logros")}
               </div>
-              <div className="hoverMedalla col-start-1 row-start-3 col-span-2 flex justify-center ">
+              <div className="hoverCert col-start-1 row-start-3 col-span-2 flex justify-center ">
+                <GiDiploma className="  fill-[#14FFEC] h-11 w-11  "></GiDiploma>
+              </div>
+              <div className="hoverMedalla col-start-1 row-start-4 col-span-2 flex justify-center ">
                 <GiTeacher className="  fill-[#14FFEC] h-11 w-11  "></GiTeacher>
               </div>
-              <div className="hoverDiploma col-start-1 row-start-4 col-span-2 flex justify-center ">
-                <GiDiploma className=" fill-[#14FFEC] h-11 w-11 "></GiDiploma>
+              <div className="hoverDiploma col-start-1 row-start-5 col-span-2 flex justify-center ">
+                <GiMedallist className=" fill-[#14FFEC] h-11 w-11 "></GiMedallist>
               </div>
-              <div className=" hoverTrofeo col-start-1 row-start-5 col-span-2 flex justify-center ">
+              <div className=" hoverTrofeo col-start-1 row-start-6 col-span-2 flex justify-center ">
                 <FaTrophy className=" fill-[#14FFEC] h-11 w-11 "></FaTrophy>
+              </div>
+              <div className="contenedorCert relative col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
+                <div className="h-full flex justify-center flex-col gap-2">
+                  <h1 className="text-white">{t("Certificado")}</h1>
+                  <hr />
+                  <p className="text-sm font-semibold text-white bg-black/60 rounded-md">
+                    {t("CertificadoTexto")}
+                  </p>
+                </div>
+                <img
+                  src="./cisco.webp"
+                  alt="certificado"
+                  className="cert  h-3/4 w-3/5 rounded-md"
+                />
               </div>
               <div className="hoverCedula contenedorP   col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center md:items-center lg:items-center gap-10">
                 <div className="h-full flex justify-center flex-col gap-2">
@@ -155,7 +172,7 @@ export const MonitorDescripcion = () => {
                 <img
                   src="./diploma.jpg"
                   alt="diploma"
-                  className="diploma  h-full w-3/5"
+                  className="diploma  h-3/4 w-3/5 rounded-md"
                 />
               </div>
               <div className="contenedorDiploma relative  col-start-3 row-start-2 col-span-7 row-span-5 flex justify-center gap-10">
