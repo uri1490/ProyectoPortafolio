@@ -8,17 +8,20 @@ export const MovilDescripcion = () => {
   return (
     <>
       <div className="hidden max-[767px]:flex flex-col h-full w-full items-center gap-2">
-        <div className="relative w-full  flex justify-center">
-          <div className="absolute bg-fondoCard-wave bg-cover  w-full h-1/2 -z-1"></div>
-          <img
-            src="./perfil3.PNG"
-            alt=""
-            className="z-10  sm:h-full w-[30%] sm:w-[40%] md:w-[50%] lg:w-[60%] 2xl:w-[70%] "
-          />
+        <div className="bg-cyan-400/30 rounded-md">
+          <div className="relative w-full  flex justify-center ">
+            <div className="absolute bg-fondoCard-wave bg-cover  w-full h-1/2 -z-1 rounded-t-md"></div>
+            <img
+              src="./perfil3.PNG"
+              alt=""
+              className="z-10  sm:h-full w-[30%] sm:w-[40%] md:w-[50%] lg:w-[60%] 2xl:w-[70%] "
+            />
+          </div>
+          {/* text-[#14FFEC] */}
+          <h1 className="border-t-2 border-b-2 border-white/30 text-xl 2xl:text-lg text-black text-center font-thin m-6">
+            Ing.José Uriel Reyes Vargas
+          </h1>
         </div>
-        <h1 className="border-t-2 border-b-2 font-semibold text-xl 2xl:text-lg text-[#14FFEC] text-center">
-          Ing.José Uriel Reyes Vargas
-        </h1>
         <div className=" text-white bg-slate-950 rounded-md p-1">
           <h1 className=" md:text-[20px] lg:text-3xl text-yellow-500 font-semibold">
             {t("About")}
